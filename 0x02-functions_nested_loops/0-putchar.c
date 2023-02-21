@@ -4,7 +4,7 @@
  * @void: no argument
  * Return: 0
 */
- char _putchar(char);
+char _putchar(char);
 int main(void)
 {
 char ermias[] = "_putchar";

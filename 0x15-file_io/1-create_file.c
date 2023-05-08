@@ -1,13 +1,19 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * create_file - Creates a file.
- * @filename: A pointer to the name of the file to create.
- * @text_content: A pointer to a string to write to the file.
- *
- * Return: If the function fails - -1.
- *         Otherwise - 1.
- */
+* read_textfile- Reads a text file
+* and prints its content to the standard output (STDOUT).
+* @filename: Name of the text file to be read.
+* @letters: Number of letters to be read.
+* This function opens the specified text file,
+* reads the specified number of bytes
+* from it, and prints the read content to the standard output (STDOUT).
+* It returns the actual number of bytes read and printed to STDOUT,
+* or 0 if the function fails
+* or the filename is NULL. Note that the file is read in binary mode.
+* Return: The actual number of bytes read and printed to STDOUT
+* or 0 if the function fails or the filename is NULL.
+*/
 int create_file(const char *filename, char *text_content)
 {
 	int dg, w, len = 0;
